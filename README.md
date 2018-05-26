@@ -27,7 +27,7 @@ xdebug.idekey=docker
     * Debugger: `Xdebug`
     * Use path mappings: `Yes`
     * Map the webroot (`app`) to `/var/www/html`
-* Start listening for PHP Debug connections
+* Enable `Start listening for PHP Debug connections`
     
 ## Run it
 
@@ -39,9 +39,9 @@ docker-compose build
 ```bash
 docker-compose up -d
 ```
-* Set a breakpoint in a PHP file in the project
-* Drop the `XDEBUG_SESSION` cookie in a browser
-* Or set the `XDEBUG_CONFIG` environment variable in a terminal:
+* Set a breakpoint in a PHP file in the project or enable the `Break on first line in PHP scripts` setting
+* Drop the `XDEBUG_SESSION` cookie in a browser and refresh the page
+* Or set the `XDEBUG_CONFIG` environment variable in a terminal, then execute the script:
 ```bash
 export XDEBUG_CONFIG="idekey=docker"
 ```
